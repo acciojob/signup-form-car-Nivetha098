@@ -1,49 +1,51 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <script type="text/javascript" src="./script.js"></script>
-    <form method="post">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" placeholder="Name" required><br>
+	<!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js">
+</script>
+<form method="post">
+	<label for= "name">Name:</label>
+	<input type="text" name="name" id="name"  placeholder="Name" required><br>
+	<label for="email">Email: </label>
+	<input type="email" name="email" id="email"  placeholder="Email"required>
+	<br>
+	<label for= "gender">Gender:</label>  
+	<br>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" placeholder="Email" required><br>
+	<input type="radio"  name="gender" id="gender_m" value= "male"required/>Male<br>
 
-        <label>Gender:</label><br>
-        <label for="gender_m">Male</label>
-        <input type="radio" name="gender" id="gender_m" value="male" required/><br>
-        <label for="gender_f">Female</label>
-        <input type="radio" name="gender" id="gender_f" value="female" required/><br>
+	<input type="radio"  id="gender_f" value="female" required/>Female<br>
+	<label for="cars">Car Brands </label>
+	<select name ="cars"id="cars" required>
+<option value="">Please choose an option </option>
+<option value="hyundai">Hyundai</option>
+<option value="Maruti Suzuki">Suzuki<option/>
+<option value="Toyoto">Toyoto<option/>
+<option value="Toyoto">Tata<option/>
+<option value="Toyoto">Tata<option/>
 
-        <label for="cars">Car Brands:</label>
-        <select name="cars" id="cars" required>
-            <option value="">Please choose an option</option>
-            <option value="hyundai">Hyundai</option>
-            <option value="maruti_suzuki">Maruti Suzuki</option>
-            <option value="toyota">Toyota</option>
-            <option value="tata">Tata</option>
-        </select><br>
-
-        <label for="age">Age:</label>
-        <input type="number" name="age" id="age" placeholder="Age" required/><br>
-
-        <label for="dob">DOB:</label>
-        <input type="date" name="dob" id="dob" required/><br>
-
-        <label for="tel">Phone Number:</label>
-        <input type="tel" name="tel" id="tel" placeholder="xxx-xxx-xxxx" required/><br>
-
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" placeholder="Password" required/><br>
-
-        <label for="tos">
-            <input type="checkbox" id="tos" required /> I agree to the TOS
-        </label><br>
-
-        <button type="submit">Submit</button>
-    </form>
+	</select><br>	
+	<label for="age"> Age:</label>
+	<input type="Number" name="age"  id="age" placeholder="Age"required/>
+<br>
+	<label for= "dob" >DOB:</label>
+	<input type="date" name="dob" id="dob" required/><br>
+	<label for= "tel">Phone Number:</label>
+	<input type="tel"  id="tel" placeholder="xxx-xxx-xxxx" required/><br>
+	<label for="password">Password:</label>
+	<input type="password" name="password" id="password" placeholder="Password" required/><br>
+<label for="tos">
+	<input type="checkbox" id="tos" required />I agree to the TOS
+	<br>
+	<button type= "submit">Submit</button>
+</form>
 </body>
+
 </html>
